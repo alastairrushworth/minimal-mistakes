@@ -1,16 +1,9 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : ""
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Alastair Rushworth"
+description              : "zz"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -55,7 +48,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               :rushworth_a
 facebook:
   username               :
   app_id                 :
@@ -77,11 +70,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Alastair Rushworth"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Data scientist & statistician"
+  location         : "Edinburgh, UK"
+  email            : "alastairmrushworth@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -89,7 +82,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "alastairrushworth"
   google_plus      :
   keybase          :
   instagram        :
@@ -100,11 +93,11 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "rushworth_a"
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : 
 
 
 # Reading Files
