@@ -9,6 +9,19 @@ I recently spoke to the [EdinbR](http://edinbr.org) R user group about predictiv
 *  __caret__ streamlines the process of cross-validation, prediction and calculating accuracy
 
 
-![](wordle.png)
+gallery:
+  - url: /assets/images/worldle.png
+    image_path: /assets/images/worldle.png
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /assets/images/worldle.png
+    image_path: /assets/images/worldle.png
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /assets/images/worldle.png
+    image_path: /assets/images/worldle.png
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+
 
 
