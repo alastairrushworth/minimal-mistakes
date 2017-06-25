@@ -26,7 +26,10 @@ rect(xvec, brks[-length(brks)], xvec + 0.5,
 mtext(side = 4, "Enlightening legend text", line = -1.5, cex = 1.5)
 my_legend
 ```
-![](png_1.png)
+
+<figure>
+<a href="/assets/images/png_1.png"><img src="/assets/images/png_1.png"></a>
+</figure>
 
 Note that `par(bg = NA)` is used throughout, so that the legend has a transparent background, which is useful if we add to a plot that has details in the background we’d prefer not to obscure too much.
 
@@ -54,4 +57,6 @@ plot(0, type = "n")
 logoing_func(legend_png, x = 0.2, y = 0.5, size = 0.5)
 ```
 
-![](png_2.png)
+<figure>
+<a href="/assets/images/png_2.png"><img src="/assets/images/png_2.png"></a>
+</figure>

@@ -2,4 +2,7 @@ Choosing Beta prior distributions can be difficult when using the default parame
 
 [https://alastairrushworth.shinyapps.io/beta_prior_picker/](https://alastairrushworth.shinyapps.io/beta_prior_picker/)
 
-![](beta_app.png)
+
+<figure>
+<a href="/assets/images/beta_app.png"><img src="/assets/images/beta_app.png"></a>
+</figure>
