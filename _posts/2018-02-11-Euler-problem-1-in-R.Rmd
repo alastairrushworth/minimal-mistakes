@@ -2,17 +2,17 @@
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-## [__Euler problem 1__](https://projecteuler.net/problem=1) 
-_If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23._
+[__The problem:__](https://projecteuler.net/problem=1) _If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23._
 
 _Find the sum of all the multiples of 3 or 5 below 1000._
 
 
 ## A simple solution using a `for` loop
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 A simple solution would be to collect all multiples of 3 and 5 that are less than 1000 by looping over all integers from 1 to 999.  For each integer we encounter in the loop, we'll need to check whether the integer is divisible by 3 or 5: the R modulus operator `%%` is handy here, because `a %% b` returns  $a\textrm{mod}(b)$, which if zero, indicates that $a$ is divisible by $b$.
 
