@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Papers
+title: Papers & presentations
 tags: [about]
 comments: false
 ---
@@ -26,3 +26,23 @@ __Published work__
 __Unpublished__
 
 + Rushworth, A. (2018). [Bayesian Distributed Lag Models.](bayesian_dlms.pdf) _arXiv preprint_ arXiv:1801.06670.
+
+__Selected presentations__
+
++ Strathclyde University, Royal Statistical Society, Glasgow local group meeting, December 2017. [So we're all data scientists now?](rss_2017.pdf)
+
++ EdinbR, Edinburgh R Users group, June 2017. [Doing machine learning in R.](edinbr_2017.pdf)
+
++ Joint Statistical Meeting, Chicago, August 2016. [Adaptive distributed lag models.](jsm_2016.pdf)
+
++ Basque Centre for Applied Mathematics seminar, Bilbao, Spain, November 2015. [Challenges in the statistical modelling of data on large river networks.](bcam_2015.pdf)
+
++ Joint Statistical Meeting, Seattle, August 2015. [Challenges in modelling air pollution and understanding its impact on human health.](jsm_2015.pdf)
+
++ Conference of the International Environmetrics Society, Anchorage, Alaska, June 2013. [Assessing and comparing the performance of models for stream network data.](ties_2013.pdf)
+
++ Lancaster University, Royal Statistical Society, Lancashire local group meeting, April 2012. (with Prof. Adrian Bowman). [Going with the flow: flexible regression for river networks.](rss_2012.pdf)
+
++ 26th International Workshop on Statistical Modelling, Valencia, July 2011. [Distributed lag models for hydrological data.](iwsm_2011.pdf)
+
+
