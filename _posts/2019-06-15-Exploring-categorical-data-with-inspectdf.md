@@ -124,7 +124,7 @@ simple stacked barplot can be produced using `show_plot()`
 star_cat %>% show_plot()
 ```
 
-![](2019-06-15-Exploring-categorical-data-with-inspectdf_files/figure-gfm/inspect_cat_plot_1-1.png)<!-- -->
+![](/assets/images/inspect_cat_plot_1-1.png)<!-- -->
 
 Like the `star_cat` tibble returned by `inspect_cat()`, each row of the
 plot is a single column, split by the relative frequency of occurrence
@@ -151,7 +151,7 @@ relative frequencies that the name bars would be very difficult to see.
 star_cat %>% show_plot(high_cardinality = 1)
 ```
 
-![](2019-06-15-Exploring-categorical-data-with-inspectdf_files/figure-gfm/inspect_cat_plot_2-1.png)<!-- -->
+![](/assets/images/inspect_cat_plot_2-1.png)<!-- -->
 
 By setting the argument `high_cardinality = 1` all entries that occur
 *only once* are combined into a single group labelled *high
@@ -180,7 +180,7 @@ available by specifying `col_palette = 1`:
 star_cat %>% show_plot(col_palette = 1)
 ```
 
-![](2019-06-15-Exploring-categorical-data-with-inspectdf_files/figure-gfm/inspect_cat_plot_3-1.png)<!-- -->
+![](/assets/images/inspect_cat_plot_3-1.png)<!-- -->
 
 I’m also quite fond of the 80s theme by choosing `col_palette = 2`:
 
@@ -188,7 +188,7 @@ I’m also quite fond of the 80s theme by choosing `col_palette = 2`:
 star_cat %>% show_plot(col_palette = 2)
 ```
 
-![](2019-06-15-Exploring-categorical-data-with-inspectdf_files/figure-gfm/inspect_cat_plot_4-1.png)<!-- -->
+![](/assets/images/inspect_cat_plot_4-1.png)<!-- -->
 
 There are 5 palettes at the moment, so have a play around. Note that the
 color palettes have not yet hit the CRAN version of `inspectdf` - that
