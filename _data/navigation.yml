@@ -4,3 +4,5 @@ main:
      url: /aboutme/
    - title: "Publications"
      url: /papers/
+   - title: "Blogs"
+     url: /
