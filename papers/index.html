@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -342,18 +343,6 @@ summary {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -380,10 +369,13 @@ $(document).ready(function () {
 
 <p><strong>Selected software</strong></p>
 <ul>
-<li><a href="https://cran.r-project.org/package=inspectdf"><code>inspectdf</code></a> (2019). Utilities for columnwise summary, comparison and visualisation of data frames. v0.0.2.</li>
-<li><a href="https://github.com/alastairrushworth/badlm"><code>badlm</code></a> (2019). Bayesian adaptive distributed lag models. v0.0.0.9000.</li>
-<li><a href="https://cran.r-project.org/package=smnet"><code>smnet</code></a> (2017). Smoothing for Stream Network Data. v2.1.1.</li>
-<li><a href="https://cran.r-project.org/package=CARBayesST"><code>CARBayesST</code></a> (2019). Spatio-Temporal Generalised Linear Mixed Models for Areal Unit Data Date. v3.0.1. Co-author with Duncan Lee &amp; Gary Napier.</li>
+<li><a href="https://cran.r-project.org/package=inspectdf"><code>inspectdf</code></a> (2019). Utilities for columnwise summary, comparison and visualisation of data frames. v0.0.3. See <a href="https://alastairrushworth.github.io/inspectdf/"><code>pkgdown</code> site for examples</a>.<br />
+</li>
+<li><a href="https://github.com/alastairrushworth/badlm"><code>badlm</code></a> (2019). Bayesian adaptive distributed lag models. v0.0.0.9000.<br />
+</li>
+<li><a href="https://cran.r-project.org/package=smnet"><code>smnet</code></a> (2017). Smoothing for Stream Network Data. v2.1.1.<br />
+</li>
+<li><a href="https://cran.r-project.org/package=CARBayesST"><code>CARBayesST</code></a> (2019). Spatio-Temporal Generalised Linear Mixed Models for Areal Unit Data Date. v3.0.1. Co-authored with Duncan Lee &amp; Gary Napier.</li>
 </ul>
 <p><strong>Journal articles</strong></p>
 <ul>
@@ -429,6 +421,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

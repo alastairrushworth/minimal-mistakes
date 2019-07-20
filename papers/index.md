@@ -7,10 +7,10 @@ comments: false
 
 __Selected software__
 
-+  [`inspectdf`](https://cran.r-project.org/package=inspectdf) (2019). Utilities for columnwise summary, comparison and visualisation of data frames.  v0.0.2.
-+  [`badlm`](https://github.com/alastairrushworth/badlm)  (2019).  Bayesian adaptive distributed lag models.  v0.0.0.9000.
-+  [`smnet`](https://cran.r-project.org/package=smnet)  (2017). Smoothing for Stream Network Data. v2.1.1.
-+  [`CARBayesST`](https://cran.r-project.org/package=CARBayesST)  (2019). Spatio-Temporal Generalised Linear Mixed Models for Areal Unit Data Date.  v3.0.1.  Co-author with Duncan Lee & Gary Napier.
++  [`inspectdf`](https://cran.r-project.org/package=inspectdf) (2019).  Utilities for columnwise summary, comparison and visualisation of data frames.  v0.0.3.    See [`pkgdown` site for examples](https://alastairrushworth.github.io/inspectdf/).  
++  [`badlm`](https://github.com/alastairrushworth/badlm)  (2019).  Bayesian adaptive distributed lag models.  v0.0.0.9000.  
++  [`smnet`](https://cran.r-project.org/package=smnet)  (2017). Smoothing for Stream Network Data. v2.1.1.  
++  [`CARBayesST`](https://cran.r-project.org/package=CARBayesST)  (2019). Spatio-Temporal Generalised Linear Mixed Models for Areal Unit Data Date.  v3.0.1.  Co-authored with Duncan Lee & Gary Napier.
 
 
 __Journal articles__
