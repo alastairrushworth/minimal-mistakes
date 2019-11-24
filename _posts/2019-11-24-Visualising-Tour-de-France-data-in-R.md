@@ -1,7 +1,7 @@
 
 <figure>
 
-<img src="/assets/images/tdf_logo.jpg" alt="drawing" width="200">
+<img src="/assets/images/tdf_logo.jpg" alt="drawing" style="width: 50%">
 
 </figure>
 
@@ -206,7 +206,7 @@ a (very rough) proxy for leanness.
 
 <figure>
 
-<img src="/assets/images/tex_eq.png" alt="drawing" width="150">
+<img src="/assets/images/tex_eq.png" alt="drawing" style="width: 50%">
 
 </figure>
 
@@ -270,7 +270,7 @@ The important columns for the stage data are
 
   - `time` the finishing time of the stage winner and time difference to
     the winner.
-  - ’rider`the rider name formatted as`Surname Forename\`.
+  - `rider` the rider name formatted as 'Surname Forename'.
   - `age` age of the rider at the start of the stage.
   - `elapsed` the time taken to reach the finish line - this is stored
     as a `lubridate::period` object for easier printing and
@@ -282,7 +282,6 @@ riders, they were granted the same finishing time as Ewan, but their
 finishing order corresponds to the order they passed the finish line.
 
 <figure>
-
 <img src="/assets/images/caleb.jpg" width="500" class="center">
 
 <figcaption>
