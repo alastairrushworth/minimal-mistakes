@@ -5,15 +5,17 @@ tags: [about]
 comments: false
 ---
 
-__Selected software__
+__R Packages__
 
-+  [`inspectdf`](https://cran.r-project.org/package=inspectdf) (2019).  Utilities for columnwise summary, comparison and visualisation of data frames.  v0.0.3.    See [`pkgdown` site for examples](https://alastairrushworth.github.io/inspectdf/).  
-+  [`badlm`](https://github.com/alastairrushworth/badlm)  (2019).  Bayesian adaptive distributed lag models.  v0.0.0.9000.  
++  [`tdf`](https://github.com/alastairrushworth/tdf) (2020).  Tour de France winners and stages data.  
++  [`htmldf`](https://github.com/alastairrushworth/htmldf) (2020).  Simple scraping and tidy webpage summaries.
++  [`inspectdf`](https://cran.r-project.org/package=inspectdf) (2019). Tools for Exploring and Comparing Data Frames.  v0.0.7.    See [`pkgdown` site for examples](https://alastairrushworth.github.io/inspectdf/).  
++ [`badlm`](https://github.com/alastairrushworth/badlm)  (2019).  Bayesian adaptive distributed lag models.  v0.0.0.9000.  
++  [`CARBayesST`](https://cran.r-project.org/package=CARBayesST)  (2019). Spatio-Temporal Generalised Linear Mixed Models for Areal Unit Data Date.  v3.1  Co-authored with Duncan Lee & Gary Napier.
 +  [`smnet`](https://cran.r-project.org/package=smnet)  (2017). Smoothing for Stream Network Data. v2.1.1.  
-+  [`CARBayesST`](https://cran.r-project.org/package=CARBayesST)  (2019). Spatio-Temporal Generalised Linear Mixed Models for Areal Unit Data Date.  v3.0.1.  Co-authored with Duncan Lee & Gary Napier.
 
 
-__Journal articles__
+__Published Papers__
 
 + Lee, D., Rushworth, A., Napier, G. (2018). [Spatio-temporal areal unit modelling in R with conditional autoregressive priors using the CARBayesST package.](carbayesst.pdf) _Journal of Statistical Software._ 84 (9).
 
