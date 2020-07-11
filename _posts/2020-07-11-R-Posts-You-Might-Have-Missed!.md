@@ -26,7 +26,7 @@ comes next\!
 
 <figure>
 
-<img src="/assets/images/information_overload.gif">
+<img src="/assets/images/information_overload.gif" alt="drawing" width="200">
 
 </figure>
 
@@ -150,6 +150,7 @@ The recipe underpinning the feed takes the following steps:
     their GH profile.
 
 ![/assets/images/gh\_profile.png](/assets/images/gh_profile.png)
+*Hello?\! Is it me you’re looking for?*
 
 **5. Compose tweets using an interactive shiny app**
 
@@ -168,7 +169,9 @@ check for any errors or formatting issues. For each tweet:
     (a randomly generated time in the week following `Sys.time()`),
     tweet text and image url.
 
-![/assets/images/app\_gif.gif](/assets/images/app_gif.gif)
+![/assets/images/app\_gif.gif](/assets/images/app_gif.gif) *A hideously
+basic shiny app for choosing images and author names. It’s simple but
+does the job\!*
 
 **6. Post\!**
 
@@ -176,7 +179,8 @@ check for any errors or formatting issues. For each tweet:
     [OneUpApp](oneupapp.io) who are particularly flexible with bulk
     uploads and cross-posting to other social networks.
 
-![/assets/images/oneupapp.png](/assets/images/oneupapp.png)
+![/assets/images/oneupapp.png](/assets/images/oneupapp.png) *This is a
+tweet scheduling service. There are many like it, but this one is mine.*
 
 ### What next?
 
