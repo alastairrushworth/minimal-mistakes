@@ -1,7 +1,7 @@
 
 <figure>
 
-<img src="/assets/posts/r_logo_final.jpg" alt="drawing" width="200">
+<img src="/assets/images/r_logo_final.jpg" alt="drawing" width="200">
 
 </figure>
 
@@ -26,7 +26,7 @@ comes next\!
 
 <figure>
 
-<img src="/assets/posts/information_overload.gif">
+<img src="/assets/images/information_overload.gif">
 
 </figure>
 
@@ -199,7 +199,7 @@ There’s a lot to do. In the short-term the intention is to
 
 ### Are you a data scientist with an interest in Python?
 
-[We’ve got you covered\!](https://twitter.com/icymi_py).
+[We’ve got you covered\!](https://twitter.com/icymi_py)
 
 ### Comments? Suggestions? Issues?
 
