@@ -1,7 +1,7 @@
 
 <figure>
 
-<img src="/assets/images/r_logo_final.jpg" alt="drawing" width="200">
+<img src="/assets/images/r_logo_final.jpg" width="200" class="center">
 
 </figure>
 
@@ -26,7 +26,7 @@ comes next\!
 
 <figure>
 
-<img src="/assets/images/information_overload.gif" alt="drawing" width="200">
+<img src="/assets/images/information_overload.gif" width="200" class="center">
 
 </figure>
 
@@ -63,8 +63,8 @@ tweets into a single weekly digest. I think R Weekly is a wonderful
 resource, and I still read it every week - it does a particularly good
 job of creating a nicely formatted list broken into content types and
 topics that were active in the last week. However, this doesn’t scratch
-my itch completely. One issue is that it’s not totally automated (AFAIK
-- please correct me if that’s false), and there’s always the risk that
+my itch completely. One issue is that it’s not totally automated (AFAIK,
+please correct me if that’s false), and there’s always the risk that
 something gets excluded. Additionally - any news oriented resource
 focusses on what’s occurred most recently (of course, yeah I know) and
 by definition excludes older useful resources that keep resurfacing. I
@@ -149,8 +149,17 @@ The recipe underpinning the feed takes the following steps:
     about 80% of R users twitter details can be gathered this way from
     their GH profile.
 
-![/assets/images/gh\_profile.png](/assets/images/gh_profile.png)
-*Hello?\! Is it me you’re looking for?*
+<figure>
+
+<img src="/assets/images/gh_profile.png" width="500" class="center">
+
+<figcaption>
+
+Hello?\! Is it me you’re looking for?
+
+</figcaption>
+
+</figure>
 
 **5. Compose tweets using an interactive shiny app**
 
@@ -169,9 +178,20 @@ check for any errors or formatting issues. For each tweet:
     (a randomly generated time in the week following `Sys.time()`),
     tweet text and image url.
 
-![/assets/images/app\_gif.gif](/assets/images/app_gif.gif) *A hideously
-basic shiny app for choosing images and author names. It’s simple but
-does the job\!*
+<figure>
+
+<img src="/assets/images/app_gif.gif" width="500" class="center">
+
+<figcaption>
+
+A hideously basic shiny app for choosing images and author names. It’s
+simple but does the job\!
+
+</figcaption>
+
+</figure>
+
+![/assets/images/app\_gif.gif]()
 
 **6. Post\!**
 
@@ -179,8 +199,18 @@ does the job\!*
     [OneUpApp](oneupapp.io) who are particularly flexible with bulk
     uploads and cross-posting to other social networks.
 
-![/assets/images/oneupapp.png](/assets/images/oneupapp.png) *This is a
-tweet scheduling service. There are many like it, but this one is mine.*
+<figure>
+
+<img src="/assets/images/oneupapp.png" width="500" class="center">
+
+<figcaption>
+
+This is a tweet scheduling service. There are many like it, but this one
+is mine.
+
+</figcaption>
+
+</figure>
 
 ### What next?
 
