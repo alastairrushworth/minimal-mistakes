@@ -191,8 +191,6 @@ simple but does the job\!
 
 </figure>
 
-![/assets/images/app\_gif.gif]()
-
 **6. Post\!**
 
   - Bulk upload the processed tweets to a scheduling service - I use
