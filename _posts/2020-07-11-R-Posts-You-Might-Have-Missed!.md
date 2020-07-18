@@ -63,16 +63,22 @@ tweets into a single weekly digest. I think R Weekly is a wonderful
 resource, and I still read it every week - it does a particularly good
 job of creating a nicely formatted list broken into content types and
 topics that were active in the last week. However, this doesn’t scratch
-my itch completely. One issue is that it’s not totally automated (AFAIK,
-please correct me if that’s false), and there’s always the risk that
-something gets excluded. Additionally - any news oriented resource
-focusses on what’s occurred most recently (of course, yeah I know) and
-by definition excludes older useful resources that keep resurfacing. I
-think it’s good for those things to continue to get air-time -
-particularly because if I’m not working on a specific topic at the time
-of the initial news announcement, I’ll probably forget about it. Or more
-likely I just missed the announcement to begin with. I think repeated
-exposure and reminders can be important.
+my itch completely. One issue is that it’s not totally automated, and
+there’s always the risk that something gets excluded. Additionally - any
+news oriented resource focusses on what’s occurred most recently (of
+course, yeah I know) and by definition excludes older useful resources
+that keep resurfacing. I think it’s good for those things to continue to
+get air-time - particularly because if I’m not working on a specific
+topic at the time of the initial news announcement, I’ll probably forget
+about it. Or more likely I just missed the announcement to begin with. I
+think repeated exposure and reminders can be important. *Edit: The
+RWeekly team have a detailed editorial process which you can read about
+[here](https://github.com/rweekly/rweekly.org/wiki/Release-Editor-FAQ),
+which was pointed out to me after I posted this (thanks
+[Maëlle](https://twitter.com/ma_salmon)\!), and in fact on the latter
+point about resurfacing older links, RWeekly do indeed allow for
+resources to be reposted in their digest if it has not appeared in the
+previous 20 weeks.*
 
 Long story short, I wanted something that goes some way to automating my
 own time-consuming process of scrolling twitter for cool things to read.
