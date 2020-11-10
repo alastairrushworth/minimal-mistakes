@@ -7,12 +7,15 @@ comments: false
 
 __R Packages__
 
-+  [`tdf`](https://github.com/alastairrushworth/tdf) (2020).  Tour de France winners and stages data.  
-+  [`htmldf`](https://github.com/alastairrushworth/htmldf) (2020).  Simple scraping and tidy webpage summaries.
-+  [`inspectdf`](https://cran.r-project.org/package=inspectdf) (2019). Tools for Exploring and Comparing Data Frames.  v0.0.7.    See [`pkgdown` site for examples](https://alastairrushworth.github.io/inspectdf/).  
-+ [`badlm`](https://github.com/alastairrushworth/badlm)  (2019).  Bayesian adaptive distributed lag models.  v0.0.0.9000.  
-+  [`CARBayesST`](https://cran.r-project.org/package=CARBayesST)  (2019). Spatio-Temporal Generalised Linear Mixed Models for Areal Unit Data Date.  v3.1  Co-authored with Duncan Lee & Gary Napier.
-+  [`smnet`](https://cran.r-project.org/package=smnet)  (2017). Smoothing for Stream Network Data. v2.1.1.  
++  [![CRAN status](https://www.r-pkg.org/badges/version/htmldf)](https://cran.r-project.org/package=htmldf) [`htmldf`](https://github.com/alastairrushworth/htmldf) (2020).  Simple scraping and tidy webpage summaries.
++  [![CRAN status](https://www.r-pkg.org/badges/version/inspectdf)](https://cran.r-project.org/package=inspectdf) [`inspectdf`](https://cran.r-project.org/package=inspectdf) (2020). Tools for Exploring and Comparing Data Frames.   See [`pkgdown` site for examples](https://alastairrushworth.github.io/inspectdf/).  
++  [![CRAN status](https://www.r-pkg.org/badges/version/CARBayesST)](https://cran.r-project.org/package=CARBayesST) [`CARBayesST`](https://cran.r-project.org/package=CARBayesST)  (2019). Spatio-Temporal Generalised Linear Mixed Models for Areal Unit Data.
++  [![CRAN status](https://www.r-pkg.org/badges/version/smnet)](https://cran.r-project.org/package=smnet) [`smnet`](https://cran.r-project.org/package=smnet)  (2020). Smoothing for Stream Network Data.
++  [`inspectpd`](https://github.com/alastairrushworth/inspectpd) (2019).  Python: package.  Tools for Exploring and Comparing Data Frames.
++  [`tdf`](https://github.com/alastairrushworth/tdf) (2020).  R Package: Tour de France winners and stages data.  
++ [`badlm`](https://github.com/alastairrushworth/badlm)  (2019).  R Package: Bayesian adaptive distributed lag models.  v0.0.0.9000.  
+
+
 
 
 __Published Papers__
