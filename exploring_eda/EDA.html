@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Exploring Exploratory Data Analysis</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Alastair Rushworth" />
+    <script src="libs/header-attrs-2.7/header-attrs.js"></script>
+    <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+    <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Exploring Exploratory Data Analysis
+### Alastair Rushworth
+### 16/03/2021
+
+---
+
+
+
+
+
+
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;i&gt;&lt;font size="6"&gt;"Exploration is curiosity put into action"&lt;/font&gt;&lt;/i&gt;
+&lt;br&gt;
+&lt;strong&gt;&lt;font size="5"&gt;Don Walsh (American Oceanographer)&lt;/font&gt;&lt;/strong&gt;
+
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+__In this talk__
++ What is EDA?
++ What is it for and why is it important?  
++ What are the tools and how can we do it better?
+
+--
+
+&lt;br&gt;
+__Scenario__
++ You are working on a new project with a large data set (00's columns, M's rows)
++ The objective is to fit a model
++ You are relatively new to the subject area
++ How do you start?
+
+---
+
+### What makes EDA hard
+
+&lt;div style="text-align:center"&gt;&lt;img src="drawing.jpg" width="75%" height="75%"/&gt;&lt;/div&gt;
+
+
+---
+
+### A strawman: how some people view EDA
+
+
+&lt;div style="text-align:center"&gt;&lt;img src="eda_typical.png" width="110%" height="110%"/&gt;&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style="text-align:right"&gt;Code minimaps by &lt;a href='https://github.com/klmr/minimappr'&gt;Konrad Rudolph&lt;/a&gt;&lt;/div&gt;
+
+---
+
+### EDA is an iterative cycle of learning
+
+&lt;div style="text-align:center"&gt;&lt;img src="eda_narrative.png" width="110%" height="110%"/&gt;&lt;/div&gt;
+
+
+---
+
+
+
+
+## EDA packages in R
+
+&lt;br&gt;&lt;br&gt;
+
+
+
+&lt;table class="table table-hover table-condensed" style="margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Package &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; First on CRAN &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Stars &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Forks &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Graphical &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Tabular &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Console &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Report &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &lt;a href="https://github.com/ropensci/skimr" style="     "&gt;skimr&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Jan 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 887 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 72 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &lt;a href="https://github.com/boxuancui/DataExplorer/" style="     "&gt;DataExplorer&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Mar 2016 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 360 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 67 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &lt;a href="https://github.com/ropensci/visdat" style="     "&gt;visdat&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Jul 2017 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 375 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 44 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &lt;a href="https://github.com/alastairrushworth/inspectdf" style="     "&gt;inspectdf&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Apr 2019 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 194 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 18 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &lt;a href="https://github.com/dcomtois/summarytools" style="     "&gt;summarytools&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Aug 2014 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 389 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 56 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &lt;a href="https://github.com/choonghyunryu/dlookr" style="     "&gt;dlookr&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Apr 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 97 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 18 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &lt;a href="https://github.com/daya6489/SmartEDA" style="     "&gt;smartEDA&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Apr 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 20 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 7 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+
+## EDA packages in R
+
+&lt;br&gt;&lt;br&gt;
+
+&lt;table class="table table-hover table-condensed" style="margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Package &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; First on CRAN &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Stars &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Forks &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Graphical &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Tabular &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Console &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Report &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;background-color: #faf6b1 !important;"&gt; &lt;a href="https://github.com/ropensci/skimr" style="     "&gt;skimr&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; Jan 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; 887 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; 72 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ❌ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;background-color: #faf6b1 !important;"&gt; &lt;a href="https://github.com/boxuancui/DataExplorer/" style="     "&gt;DataExplorer&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; Mar 2016 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; 360 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; 67 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ✔️ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;background-color: #faf6b1 !important;"&gt; &lt;a href="https://github.com/ropensci/visdat" style="     "&gt;visdat&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; Jul 2017 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; 375 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; 44 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ❌ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;background-color: #faf6b1 !important;"&gt; &lt;a href="https://github.com/alastairrushworth/inspectdf" style="     "&gt;inspectdf&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; Apr 2019 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; 194 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; 18 &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;font-weight: bold;background-color: #faf6b1 !important;"&gt; ❌ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &lt;a href="https://github.com/dcomtois/summarytools" style="     "&gt;summarytools&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Aug 2014 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 389 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 56 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &lt;a href="https://github.com/choonghyunryu/dlookr" style="     "&gt;dlookr&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Apr 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 97 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 18 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &lt;a href="https://github.com/daya6489/SmartEDA" style="     "&gt;smartEDA&lt;/a&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; Apr 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 20 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 7 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ❌ &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ✔️ &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+---
+
+## First look - the basics 👀
+
+Try `glimpse()`, a transposed version of `head()`:
+
+
+```r
+dplyr::glimpse(starwars)
+```
+
+```
+## Rows: 87
+## Columns: 14
+## $ name       &lt;chr&gt; "Luke Skywalker", "C-3PO", "R2-D2", "Darth Vader", "Leia Or…
+## $ height     &lt;int&gt; 172, 167, 96, 202, 150, 178, 165, 97, 183, 182, 188, 180, 2…
+## $ mass       &lt;dbl&gt; 77.0, 75.0, 32.0, 136.0, 49.0, 120.0, 75.0, 32.0, 84.0, 77.…
+## $ hair_color &lt;chr&gt; "blond", NA, NA, "none", "brown", "brown, grey", "brown", N…
+## $ skin_color &lt;chr&gt; "fair", "gold", "white, blue", "white", "light", "light", "…
+## $ eye_color  &lt;chr&gt; "blue", "yellow", "red", "yellow", "brown", "blue", "blue",…
+## $ birth_year &lt;dbl&gt; 19.0, 112.0, 33.0, 41.9, 19.0, 52.0, 47.0, NA, 24.0, 57.0, …
+## $ sex        &lt;chr&gt; "male", "none", "none", "male", "female", "male", "female",…
+## $ gender     &lt;chr&gt; "masculine", "masculine", "masculine", "masculine", "femini…
+## $ homeworld  &lt;chr&gt; "Tatooine", "Tatooine", "Naboo", "Tatooine", "Alderaan", "T…
+## $ species    &lt;chr&gt; "Human", "Droid", "Droid", "Human", "Human", "Human", "Huma…
+## $ films      &lt;list&gt; &lt;"The Empire Strikes Back", "Revenge of the Sith", "Return…
+## $ vehicles   &lt;list&gt; &lt;"Snowspeeder", "Imperial Speeder Bike"&gt;, &lt;&gt;, &lt;&gt;, &lt;&gt;, "Imp…
+## $ starships  &lt;list&gt; &lt;"X-wing", "Imperial shuttle"&gt;, &lt;&gt;, &lt;&gt;, "TIE Advanced x1",…
+```
+
+---
+
+### `skimr::skim()`
+
+_A simple to use summary function that can be used with pipes and displays nicely in the console._
+
+![](summary_skimr.png)
+
+__Summary of package__
++ Pipeable syntax
++ Comprehensive summaries per data type
++ Console-centric, but dataframe summaries are available
+---
+
+
+
+
+### `skimr::skim()` &lt;img src="skimr.png" align="right" width="130" /&gt;
+
+Returns separate sections of printed output for each type in the data:
+
+
+```r
+skim(starwars)
+```
+
+
+```r
+── Data Summary ────────────────────────
+                           Values         
+Name                       dplyr::starwars
+Number of rows             87             
+Number of columns          14             
+_______________________                   
+Column type frequency:                    
+  character                8              
+  list                     3              
+  numeric                  3              
+________________________                  
+Group variables            None           
+```
+
+---
+
+### `skimr::skim()` &lt;img src="skimr.png" align="right" width="130" /&gt;
+
+Returns separate sections of printed output for each type in the data:
+
+
+```r
+skim(starwars)
+```
+
+
+```r
+── Variable type: character ─────────────────────────────────────────────────────────────────────────────────────────────
+  skim_variable n_missing complete_rate   min   max empty n_unique whitespace
+1 name                  0         1         3    21     0       87          0
+2 hair_color            5         0.943     4    13     0       12          0
+3 skin_color            0         1         3    19     0       31          0
+4 eye_color             0         1         3    13     0       15          0
+5 sex                   4         0.954     4    14     0        4          0
+6 gender                4         0.954     8     9     0        2          0
+7 homeworld            10         0.885     4    14     0       48          0
+8 species               4         0.954     3    14     0       37          0
+```
+
+__For character columns:__
++ All the usual suspects: missingness, complete rate  
++ Also string characteristics: min, max, whitespace and emptiness
+
+---
+ 
+### `skimr::skim()` &lt;img src="skimr.png" align="right" width="130" /&gt;
+
+Returns separate sections of printed output for each type in the data:
+
+
+```r
+skim(starwars)
+```
+
+
+```r
+── Variable type: list ──────────────────────────────────────────────────────────────────────────────────────────────────
+  skim_variable n_missing complete_rate n_unique min_length max_length
+1 films                 0             1       24          1          7
+2 vehicles              0             1       11          0          2
+3 starships             0             1       17          0          5
+```
+
+&lt;br&gt;
+
+__For list columns:__
++ Missingness, complete rate  
++ Handy: Lengths of lists
+
+---
+  
+### `skimr::skim()` &lt;img src="skimr.png" align="right" width="130" /&gt;
+
+Returns separate sections of printed output for each type in the data:
+
+
+```r
+skim(starwars)
+```
+
+
+```r
+── Variable type: numeric ───────────────────────────────────────────────────────────────────────────────────────────────
+  skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100 hist 
+1 height                6         0.931 174.   34.8    66 167     180 191     264 ▁▁▇▅▁
+2 mass                 28         0.678  97.3 169.     15  55.6    79  84.5  1358 ▇▁▁▁▁
+3 birth_year           44         0.494  87.6 155.      8  35      52  72     896 ▇▁▁▁▁
+```
+
+__For numeric columns:__
+
++ Killer feature: spark histograms in the console.  
++ No faffing / toggling hundreds of `ggplots`!
+---
+
+
+## `visdat`
+
+_Create preliminary exploratory data visualisations of an entire dataset to identify problems or unexpected features using ggplot2._
+
+![](summary_visdat.png)
+
+__Summary of package__
++ Visualisation-centric API
++ Emphasis on summarising and viewing the _whole dataframe_
++ Great for visualising location of attributes in the dataframe
+---
+
+
+
+### `visdat::vis_dat()` &amp; `visdat::vis_miss()`
+
+Visualise whole dataframes, for example types (left) and missing values (right)
+
+.pull-left[
+
+```r
+vis_dat(starwars)
+```
+
+&lt;img src="EDA_files/figure-html/unnamed-chunk-13-1.png" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+```r
+vis_miss(starwars)
+```
+
+&lt;img src="EDA_files/figure-html/unnamed-chunk-14-1.png" style="display: block; margin: auto;" /&gt;
+]
+
+&lt;img src="visdat.png" align="right" width="130" /&gt;
+
+
+---
+
+## `inspectdf`
+
+_A collection of utilities for columnwise summary, comparison and visualisation of data frames. Functions report missingness, categorical levels, numeric distribution, correlation, column types and memory usage._
+
+![](summary_inspectdf.png)
+
+_Summary of package_
++ Dataframe centric output, with option to plot each
++ Comparison _across_ data frames is emphasised
++ Disclaimer: I wrote this
+---
+
+
+### `inspectdf::inspect_cat()` &lt;img src="inspectdf.png" align="right" width="130" /&gt;
+
+Dataframe summarising categorical features in the data:
+
+
+```r
+inspect_cat(starwars) 
+```
+
+```
+## # A tibble: 8 x 5
+##   col_name     cnt common    common_pcnt levels           
+##   &lt;chr&gt;      &lt;int&gt; &lt;chr&gt;           &lt;dbl&gt; &lt;named list&gt;     
+## 1 eye_color     15 brown           24.1  &lt;tibble [15 × 3]&gt;
+## 2 gender         3 masculine       75.9  &lt;tibble [3 × 3]&gt; 
+## 3 hair_color    13 none            42.5  &lt;tibble [13 × 3]&gt;
+## 4 homeworld     49 Naboo           12.6  &lt;tibble [49 × 3]&gt;
+## 5 name          87 Ackbar           1.15 &lt;tibble [87 × 3]&gt;
+## 6 sex            5 male            69.0  &lt;tibble [5 × 3]&gt; 
+## 7 skin_color    31 fair            19.5  &lt;tibble [31 × 3]&gt;
+## 8 species       38 Human           40.2  &lt;tibble [38 × 3]&gt;
+```
+
+---
+
+### `inspectdf::inspect_cat()` &lt;img src="inspectdf.png" align="right" width="130" /&gt;
+
+
+```r
+inspect_cat(starwars) %&gt;% show_plot()
+```
+
+&lt;img src="EDA_files/figure-html/unnamed-chunk-16-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+### `inspectdf::inspect_types()`
+
+.pull-left[
+
+```r
+inspect_types(starwars) %&gt;% show_plot()
+```
+
+&lt;img src="EDA_files/figure-html/unnamed-chunk-17-1.png" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+```r
+inspect_types(starwars, starwars[, -2]) %&gt;% 
+  show_plot()
+```
+
+&lt;img src="EDA_files/figure-html/unnamed-chunk-18-1.png" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+
+
+## `DataExplorer`
+
+_Automate Data Exploration and Treatment._
+
+&lt;br&gt;&lt;br&gt;
+
+![](summary_dataexplorer.png)
+&lt;br&gt;
+
+_Summary of package_
++ All-in-one report creation tool, one-line interface
++ Output to common formats: eg. markdown or PDF
++ Not all column types supported (eg. lists)
+
+---
+
+
+### `DataExplorer::create_report()` &lt;img src="dataexplorer.png" align="right" width="130" /&gt;
+
+
+```r
+create_report(starwars %&gt;% select(-films, -vehicles, -starships))
+```
+
+&lt;br&gt;
+
+![](dataexplorer.gif)
+
+---
+
+&lt;div style="text-align:center"&gt;&lt;img src="morpheus.png" width="110%" height="110%"/&gt;&lt;/div&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Avoid data frame tunnel vision --&gt;
+
+&lt;!-- ![](df.png) --&gt;
+
+
+---
+
+&lt;div style="text-align:center"&gt;&lt;img src="ggplot2_exploratory.png" width="60%" height="60%"/&gt;&lt;/div&gt;
+&lt;div style="text-align:right"&gt;Artwork by &lt;a href='https://twitter.com/allison_horst'&gt;@allison_horst&lt;/a&gt;&lt;/div&gt;
+
+---
+
+&lt;!-- ### EDA is an iterative cycle of learning --&gt;
+
+&lt;!-- &lt;div style="text-align:center"&gt;&lt;img src="eda_narrative.png" width="110%" height="110%"/&gt;&lt;/div&gt; --&gt;
+
+
+&lt;!-- --- --&gt;
+
+
+## Your brain is the most important ingredient
+
+![](EDA_files/figure-html/unnamed-chunk-20-1.png)&lt;!-- --&gt;
+
+
+---
+
+## Tips: Supercharge your EDA with questions
+
+__Make friends with your local experts!__
+
++ Ask them to talk broadly about the data / process
++ Then ask your burning questions
+
+--
+
+__Ask yourself questions__
+
++ No really!
++ _Does this make sense?_
++ _Do I understand this?_
+
+--
+
+__Find a colleague to discuss the topic with__
+
++ Aim to condense the problem statement into an accessible summary
++ Invite their questions - these will rapidly expose holes in your understanding
++ Remember it's ok not to know 
+
+--
+
+__As questions expose new gaps, find creative ways to analyse the data to learn or confirm a new idea__
+
+---
+
+## A definitely true fact
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;strong&gt;&lt;font size="6"&gt;80% of data science failures are avoidable by asking the right questions early enough.&lt;/font&gt;&lt;/strong&gt;
+
+&lt;!-- --- --&gt;
+
+
+&lt;!-- ## Using EDA tooling more effectively --&gt;
+
+&lt;!-- __EDA is as much something that happens _in your brain_ as much as on your computer__  --&gt;
+
+&lt;!-- + There is no silver bullet, and EDA cannot be automated --&gt;
+&lt;!-- + Investing the effort --&gt;
+
+
+&lt;!-- __BUT, EDA tools that make statistical analysis easy have an important role__ --&gt;
+
+&lt;!-- + It's useful to have a tool bag of code that makes EDA easy --&gt;
+&lt;!-- + The faster you can learn, and find problems the better --&gt;
+
+
+
+---
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;div style="text-align:center"&gt;&lt;img src="200.gif" width="40%" height="40%"/&gt;&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div style="text-align:right"&gt;
+&lt;a href ='https://thedatasciencekernel.com/2021/01/24/exploratory-data-analysis-whats-the-point/'&gt;Related blog post: "Exploratory Data Analysis - What's the point?"&lt;/a&gt;&lt;/div&gt;
+---
+
+
+
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"css": "my-style.css",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
