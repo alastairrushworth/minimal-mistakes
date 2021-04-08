@@ -14,3 +14,8 @@ npm-debug.log*
 .Rproj.user
 alastairrushworth.github.io.Rproj
 _posts/*.Rmd
+searchable/*.RData
+searchable/*.RProj
+searchable/*.R
+searchable/*.Rmd
+searchable/searchable_cache/
