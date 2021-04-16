@@ -1,4 +1,98 @@
 Title,Topic,Post type,URL
+gtfs2gps • Convert GTFS data into a data.table with GPS-like records in R,visualisation,package,https://github.com/ipeaGIT/gtfs2gps
+"Introducción R, manipulación y visualización en R",visualisation,article,http://www.castrolab.org/isme/introR/introR.html
+Searching for Spring: how to get data from the iNaturalist API in R | Eleanor,visualisation,article,https://www.eleanor-jackson.com/post/searching-for-spring/
+rollRegres • R package for fast rolling and expanding linear regression models,visualisation,package,https://github.com/boennecd/rollRegres
+Speeding up plotting of large data in base R • Clark Richards,visualisation,article,https://www.clarkrichards.org/2021/04/11/speeding-up-base-r-plots/
+"datapasta • On top of spaghetti, all covered in cheese....",visualisation,package,https://github.com/milesmcbain/datapasta
+preferably - a 'pkgdown' template • preferably,publishing,article,https://preferably.amirmasoudabdol.name/index.html
+Esquisse R Package — Little Miss Data,visualisation,article,https://www.littlemissdata.com/fdf/esquisse
+Corey Sparks's Blog: Using IPUMS USA for Estimation of Population Characteristics in Various Geographic Areas,visualisation,article,https://coreysparks.github.io/posts/2021-04-14-mapping-ipums-estimates/
+Introducing ggirl,visualisation,article,https://jnolis.com/blog/introducing_ggirl/
+Marginal effects and interaction terms - Grant R. McDermott,statistics,article,https://grantmcdermott.com/interaction-effects/
+Open Source Tools,r-programming,article,https://www.robinlovelace.net/presentations/reproducibilitea.html
+Curly Curly: How to pass bare variable arguments to things? | Credibly Curious,visualisation,article,https://www.njtierney.com/post/2019/07/06/jq-bare-vars/
+Efficient Fitting of Linear and Generalized Linear Models • eflm,models,article,http://pacha.dev/eflm/
+SDS375 • SDS 375 Data Visualization in R,visualisation,package,https://github.com/wilkelab/SDS375
+Virtual Windows machine for checking R packages - The R Blog,visualisation,article,https://developer.r-project.org/Blog/public/2021/03/18/virtual-windows-machine-for-checking-r-packages/
+"Informative priors for correlation matrices: An easy approach | Stephen R. Martin, PhD",statistics,article,http://srmart.in/informative-priors-for-correlation-matrices-an-easy-approach/
+A2B of Data Science: Quantile Regression in AB Tests,visualisation,article,https://www.a2bofdatascience.com/2021/03/quantile-regression-in-ab-tests.html
+Heatmapping My New York City Marathon Training | JLaw's R Blog,visualisation,article,https://jlaw.netlify.app/2021/04/01/heatmapping-my-new-york-city-marathon-training/
+RSpectra • R Interface to the Spectra Library for Large Scale Eigenvalue and SVD Problems,visualisation,package,https://github.com/yixuan/RSpectra
+Modeling Balls in Play Outcomes with an Ordinal Model | Exploring Baseball Data with R,visualisation,article,https://baseballwithr.wordpress.com/2021/03/31/modeling-balls-in-play-outcomes-with-an-ordinal-model/
+"Unified and Automatic Theming of ggplot2, lattice, and base R Graphics • thematic",visualisation,article,https://rstudio.github.io/thematic/index.html
+"Deep learning, false negatives/positives and predator-prey interactions",visualisation,article,https://oliviergimenez.github.io/prezDLoccupancy/
+Sciencificity's Blog: sql-in-rmarkdown,visualisation,article,https://sciencificity-blog.netlify.app/posts/2021-03-27-sql-in-rmarkdown/
+pewdata • Reproducible Retrieval of Pew Research Center Datasets in R,visualisation,package,https://github.com/fsolt/pewdata
+Tutorial - Design Study in Solidworks with Data Analysis in R · [R]eliability,visualisation,article,https://rileyking.netlify.app/post/tutorial-design-study-in-solidworks-with-data-analysis-in-r/
+Implement interactive heatmap from scratch - A Bioinformagician,shiny,article,https://jokergoo.github.io/2021/04/05/implement-interactive-heatmap-from-scratch/
+DT: An R interface to the DataTables library,visualisation,article,https://rstudio.github.io/DT/
+A modest proposal for matrix multiplication - Biased and Inefficient,publishing,article,https://notstatschat.rbind.io/2021/04/01/a-modest-proposal-for-matrix-multiplication/
+Showcasing Your #rstats Skills with blogdown | Anthony Scotina,publishing,article,https://scotinastats.rbind.io/2021/03/31/showcasing-your-rstats-skills-with-blogdown/
+Stream networks using R and GEOS | Fish & Whistle,spatial,article,https://fishandwhistle.net/post/2021/stream-networks-using-r-and-geos/
+Harald Kliems: Dane County Migration Flows,visualisation,article,https://haraldkliems.netlify.app/posts/dane-county-migration-flows/
+mschart • office charts from R,visualisation,package,https://github.com/ardata-fr/mschart
+Tidyverse,visualisation,article,https://www.tidyverse.org/blog/2021/03/clock-0-1-0/
+"Import, Clean and Update Data from the New Zealand Freshwater Fish Database • nzffdr",spatial,article,https://flee598.github.io/nzffdr/
+Interface to fastai • fastai,visualisation,article,https://eagerai.github.io/fastai/
+cdkr • Integrating R and the CDK,visualisation,package,https://github.com/CDK-R/cdkr
+Dr. Sil Aarts - vignette,visualisation,article,https://vignette.md/interviews/2021-04-05-sil-aarts/
+"3 lesser-known pipe operators in Tidyverse | by Abhinav Malasi | Mar, 2021 | Towards Data Science",visualisation,article,https://towardsdatascience.com/3-lesser-known-pipe-operators-in-tidyverse-111d3411803a?gi=247cc6876320
+weathercan • R package for downloading weather data from Environment and Climate Change Canada,visualisation,package,https://github.com/ropensci/weathercan
+cli • Tools for making beautiful & useful command line interfaces,visualisation,package,https://github.com/r-lib/cli
+cran-downloads • A shiny app to display cran downloads,visualisation,package,https://github.com/hadley/cran-downloads
+ConfusionTableR package has a new function – Hutsons-hacks,visualisation,article,https://hutsons-hacks.info/confusiontabler-package-has-a-new-function
+datasearch • Find Datasets Observing Specific Conditions,visualisation,package,https://github.com/moodymudskipper/datasearch
+"Statistical Rethinking with brms, ggplot2, and the tidyverse",models,article,https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/
+How to create 'Warming Stripes' in R | Dominic Royé,visualisation,article,https://dominicroye.github.io/en/2018/how-to-create-warming-stripes-in-r/
+Visualizing City of Helsinki procurements with geofi-package | rOpenGov R packages for open government data analytics,visualisation,article,http://ropengov.org/2021/04/helsinki-ostodata/
+The Shiny AWS Book,big-data,article,https://business-science.github.io/shiny-production-with-aws-book/
+PIPING HOT DATA: Deploy previews with Netlifly,visualisation,article,https://www.pipinghotdata.com/posts/2021-04-01-deploy-previews-with-netlifly/
+Easy Spatial Modeling with Random Forest • spatialRF,spatial,article,https://blasbenito.github.io/spatialRF/
+"Say Goodbye to ""Good Taste"" · Data Imaginist",visualisation,article,https://www.data-imaginist.com/2021/say-goodbye-to-good-taste/
+VOSON Lab Coding Blog: Twitter Conversation Networks,visualisation,article,https://vosonlab.github.io/posts/2021-03-23-twitter-conversation-networks/
+Interface to 'D3' Visualizations • r2d3,visualisation,article,https://rstudio.github.io/r2d3/index.html
+R-Music: Introduction to the gm package,spatial,article,https://r-music.rbind.io/posts/2021-04-03-gm/
+What's new in quanteda version 3.0 – Quanteda Initiative Blog,visualisation,article,https://blog.quanteda.org/2021/04/07/whats-new-in-quanteda-version-3.0/
+Introduction to Data Science,statistics,article,https://rafalab.github.io/dsbook/
+"ggweekly • 🗓 🖨 Easy, printable, custom calendars and week planners",visualisation,package,https://github.com/gadenbuie/ggweekly
+A Deep Learning Classifier of New Testament Verse Authorship using the R Keras Package – The Lab-R-torian,publishing,article,http://labrtorian.com/2021/04/07/a-deep-learning-classifier-of-new-testament-verse-authorship-using-the-r-keras-package/
+Mastering Spark with R,models,article,https://therinspark.com
+Manu - NZ native bird palettes • Manu,visualisation,article,https://g-thomson.github.io/Manu/
+rhwsd • An R package for using the Harmonized World Soil Database (HWSD),visualisation,package,https://github.com/dlebauer/rhwsd
+Write your dissertation in Rmarkdown,publishing,article,https://ourcodingclub.github.io/tutorials/rmarkdown-dissertation/
+Shiny Themes,visualisation,article,https://rstudio.github.io/shinythemes/
+R Markdown: The Definitive Guide,publishing,article,https://bookdown.org/yihui/rmarkdown/
+Geospatial vector data in R with sf,spatial,article,https://ourcodingclub.github.io/tutorials/spatial-vector-sf/
+"Long time, no see: Virtual Lunch Roulette",statistics,article,https://staff.math.su.se/hoehle/blog/2021/04/04/socialsamp.html
+Cats in R console. — kittyR • kittyR,publishing,article,https://indrajeetpatil.github.io/kittyR/reference/kittyR.html
+Making the Most of Regression (or: Regression is Story-telling and Here’s How to Tell Your Story Well),spatial,article,http://post8000.svmiller.com/lab-scripts/mmr-lab.html
+Learning Shiny with NBA data,visualisation,article,http://juliawrobel.com/tutorials/shiny_tutorial_nba.html
+Tidyverse,visualisation,article,https://www.tidyverse.org/blog/2021/04/reprex-2-0-0/
+The targets R Package User Manual,models,article,https://books.ropensci.org/targets/index.html
+mfgarch • An R package for using mixed-frequency GARCH models,visualisation,package,https://github.com/onnokleen/mfgarch
+grateful • Facilitate citation of R packages,visualisation,package,https://github.com/Pakillo/grateful
+Futureverse,visualisation,article,https://www.futureverse.org/
+BI and Data Science: Deliver Insights Through Embedded Analytics | RStudio Blog,visualisation,article,https://blog.rstudio.com/2021/04/01/bi-and-data-science-deliver-insights-through-embedded-analytics/
+"Gerke Lab | Using Netlify CMS with R Markdown, hosted on GitHub Pages",publishing,article,https://www.gerkelab.com/blog/2021/04/netlifycms-rmd-ghpages/
+Eric Ekholm: Personalizing the Distill Template,publishing,article,https://www.ericekholm.com/posts/2021-04-02-personalizing-the-distill-template/
+Wilcoxon signed-rank test | Gregor Mathes,statistics,article,https://gregor-mathes.netlify.app/2021/04/01/regression-tests/
+rdocsyntax • Syntax highlighting for R HTML documentation,visualisation,package,https://github.com/kiendang/rdocsyntax
+Sliding in Style · Garrick Aden‑Buie,publishing,article,https://www.garrickadenbuie.com/talk/sliding-in-style-south-coast-ma/
+The Mockup Blog: Three years of TidyTuesday,visualisation,article,https://themockup.blog/posts/2021-04-01-three-years-of-tidytuesday/
+tweetbotornot • 🤖 R package for detecting Twitter bots via machine learning,visualisation,package,https://github.com/mkearney/tweetbotornot
+multicolor • Add multiple colors to your R console and RMarkdown output,visualisation,package,https://github.com/aedobbyn/multicolor
+Ten Years vs The Spread II: Calculating publication lag times in R – quantixed,scraping,article,https://quantixed.org/2021/04/04/ten-years-vs-the-spread-ii-calculating-publication-lag-times-in-r/
+Josiah Parry,scraping,article,http://josiahparry.com/post/2021-03-28-language-agnostic/
+A Deep Dive Into How R Fits a Linear Model,models,article,http://madrury.github.io/jekyll/update/statistics/2016/07/20/lm-in-R.html
+"Combining R {tidyverse, leaflet, DT, flexdashboard} and Python {pandas, GeoPy} to create a serverless psychotherapy dashboard",spatial,article,https://www.data-must-flow.com/posts/python_r_therapy/
+Statistical Inference via Data Science,statistics,article,https://moderndive.com/index.html
+"The top 10 R errors, the 7th one will surprise you - Rtask",visualisation,article,https://rtask.thinkr.fr/the-top-10-r-mistakes-the-7th-one-will-surprise-you/
+Applied longitudinal data analysis in brms and the tidyverse,models,article,https://bookdown.org/content/4253/
+Textantworten (offene Nennungen) codieren mit R: stringr und regex | Statistik Dresden,visualisation,article,https://statistik-dresden.de/archives/16168
+Daymetr raster manipulation | BlueGreen Labs,spatial,article,https://bluegreenlabs.org/post/daymetr-raster-manipulations/
+How to test any hypothesis with the infer package | Andrew Heiss,visualisation,article,https://www.andrewheiss.com/blog/2018/12/05/test-any-hypothesis/
+Blog | Curso-R,visualisation,article,https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/
 Setting up a home cluster | Blas M. Benito,models,article,https://www.blasbenito.com/post/01_home_cluster/
 Using brms to model reaction times contaminated with errors,statistics,article,https://www.martinmodrak.cz/2021/04/01/using-brms-to-model-reaction-times-contaminated-with-errors/
 compareWith • RStudio Addins for Enhanced Diff and Merge,visualisation,package,https://github.com/miraisolutions/compareWith
