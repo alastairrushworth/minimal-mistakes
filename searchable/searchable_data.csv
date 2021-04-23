@@ -1,4 +1,70 @@
 Title,Topic,Post type,URL
+Data Analysis Hub: Formatting Migration Recall Data for Longitudinal Analysis,visualisation,article,https://ipums.github.io/pma-data-hub/posts/2021-04-15-migration-discovery/
+JavaScript is not available.,visualisation,article,https://twitter.com/i/lists/1303609846789533696?s=20
+Beeswarm en ggplot2 con ggbeeswarm | R CHARTS,visualisation,article,https://r-charts.com/es/distribucion/ggbeeswarm/
+Analyzing the programming languages used in R packages - Philippe Massicotte,visualisation,article,https://www.pmassicotte.com/post/analyzing-the-programming-languages-used-in-r-packages/
+Hierarchical modelling of spatial data,spatial,article,https://ourcodingclub.github.io/tutorials/spatial-modelling-inla/
+Sometimes I R: How to analyze visual analog (slider) scale data?,statistics,article,https://mvuorre.github.io/posts/2019-02-18-analyze-analog-scale-ratings-with-zero-one-inflated-beta-models/
+An Alternative to the Correlation Coefficient That Works For Numeric and Categorical Variables · R Views,statistics,article,https://rviews.rstudio.com/2021/04/15/an-alternative-to-the-correlation-coefficient-that-works-for-numeric-and-categorical-variables/
+Dealing with heteroskedasticity; regression with robust standard errors using R,statistics,article,https://www.brodrigues.co/blog/2018-07-08-rob_stderr/
+Release of biblionetwork 0.1.0 | Aurélien Goutsmedt,visualisation,article,https://aurelien-goutsmedt.com/post/release-biblionetwork/
+Celestial Maps · Kim Fitter,spatial,article,https://kimnewzealand.github.io/2019/02/21/celestial-maps/
+errors • Uncertainty Propagation for R Vectors,visualisation,package,https://github.com/r-quantities/errors
+Exploring historical maps and spatial data with R and OpenStreetMap | Maarten Hermans,spatial,article,https://mhermans.net/post/mapping-leuvense-gangen/
+{hagr} Database of Animal Ageing and Longevity - datawookie,publishing,article,https://datawookie.dev/blog/2021/04/hagr-database-of-animal-ageing-and-longevity/
+armacmp • 🚀 Automatically compile linear algebra R code to C++ with Armadillo,visualisation,package,https://github.com/dirkschumacher/armacmp
+Tidy Model Visualisation for Generalised Additive Models • tidymv,visualisation,article,https://stefanocoretta.github.io/tidymv/
+deminR • A minesweeper for R!,visualisation,package,https://github.com/DivadNojnarg/deminR
+R Image Art,visualisation,article,http://mfviz.com/r-image-art/
+useR2019_highd_vis • Tutorial notes for useR! 2019 on Visualising High-Dimensional Data,visualisation,package,https://github.com/dicook/useR2019_highd_vis
+Using RSelenium to scrape a paginated HTML table,scraping,article,https://guillaumepressiat.github.io/blog/2021/04/RSelenium-paginated-tables
+GitHub Actions for R Users,shiny,article,https://adsoncostanzifilho.github.io/blog/2021/04/01/github-actions-for-r-users/
+"Explora tu actividad en Google con R: Análisis y visualización de datos de tu historial de ubicaciones | by Saúl Buentello | Apr, 2021 | Medium",visualisation,article,https://cosmoduende.medium.com/explora-tu-actividad-en-google-con-r-an%C3%A1lisis-y-visualizaci%C3%B3n-de-datos-de-tu-historial-de-3c96f402fa6e
+gt-workshop-2020 • A workshop to learn lots about the gt R package,visualisation,package,https://github.com/rich-iannone/gt-workshop-2020
+ggkeyboard • Make a keyboard using ggplot2.,visualisation,package,https://github.com/sharlagelfand/ggkeyboard
+Merging with data.table - Jose M Sallan blog,visualisation,article,https://jmsallan.netlify.app/blog/merging-with-data-table/
+What Do We Know About British Attitudes Toward Immigration? A Pedagogical Exercise of Sample Inference and Regression | Steven V. Miller,statistics,article,http://svmiller.com/blog/2020/03/what-explains-british-attitudes-toward-immigration-a-pedagogical-example/
+Introducing Modeltime Recursive: Tidy Autoregressive Forecasting with Lags,models,article,https://www.business-science.io/code-tools/2021/04/08/autoregressive-machine-learning.html
+Turn Your Git Commit Messages Into A Bookdown • gitdown,publishing,article,https://thinkr-open.github.io/gitdown/index.html
+geobr • Easy access to official spatial data sets of Brazil in R and Python,visualisation,package,https://github.com/ipeaGIT/geobr
+shapr • Explaining the output of machine learning models with more accurately estimated Shapley values,visualisation,package,https://github.com/NorskRegnesentral/shapr
+Best Coding Practices for R,visualisation,article,https://bookdown.org/content/d1e53ac9-28ce-472f-bc2c-f499f18264a3/
+The Basics of Bayesian Inference,spatial,article,http://post8000.svmiller.com/lab-scripts/bayes-lab.html
+tidypredict • Run predictions inside the database,models,package,https://github.com/tidymodels/tidypredict
+Check ‘Developer Tools’ First To Avoid Heavy-ish Dependencies | rud.is,visualisation,article,https://rud.is/b/2021/04/12/check-developer-tools-first-to-avoid-heavy-ish-dependencies/
+Using Kubernetes and the Future Package to Easily Parallelize R in the Cloud,models,article,https://www.jottr.org/2021/04/08/future-and-kubernetes/
+Download R Cheat Sheets Locally • cheatsheet,publishing,article,https://bradlindblad.github.io/cheatsheet/
+Translate Datasets to Portuguese • dados,visualisation,article,https://cienciadedatos.github.io/dados/
+Reading Data from Multiple Excel Sheets and Converting it to Individual Data Frames in R · Fahim Ahmad Yousufzai,scraping,article,https://fahimahmad.netlify.app/posts/reading-data-from-multiple-excel-sheets-and-converting-it-to-individual-data-frames-in-r/
+crsuggest • Get appropriate CRS suggestions for your spatial data in R,visualisation,package,https://github.com/walkerke/crsuggest
+mailmerge • Mail Merge Using R Markdown Documents and 'gmailr',visualisation,package,https://github.com/andrie/mailmerge
+survivoR now on CRAN! - Daniel Oehm | Gradient Descending,visualisation,article,http://gradientdescending.com/survivor-now-on-cran/
+Snow Stripes: Visualizing the rhythms of winter with daily snowfall data in R,visualisation,article,https://smalltownbigdata.github.io/april2021-snowfall/april2021-snowfall.html
+Constructing a Radial Chart using ggplot2 | Exploring Baseball Data with R,visualisation,article,https://baseballwithr.wordpress.com/2021/04/12/constructing-a-radial-chart-using-ggplot2/
+How to plot a large rural area using Ordnance Survey data in R – R for Journalists,publishing,article,https://rforjournalists.com/2021/04/10/how-to-plot-a-large-rural-area-using-ordnance-survey-data-in-r/
+Making a ggplot theme | uncarvedblog,publishing,article,https://uncarvedblog.xyz/blog/making_a_ggplot_theme/
+dimRed • A Framework for Dimensionality Reduction in R,visualisation,package,https://github.com/gdkrmr/dimRed
+Up-to-date blog stats in your README - rostrum.blog,publishing,article,https://www.rostrum.blog/2021/04/14/gha-readme/
+"Model Monitoring with R Markdown, pins, and RStudio Connect | RStudio Blog",publishing,article,https://blog.rstudio.com/2021/04/08/model-monitoring-with-r-markdown/
+corrmorant • R package for flexible correlation matrices based on ggplot2,visualisation,package,https://github.com/r-link/corrmorant
+Functions for acquiring and analyzing baseball data • baseballr,scraping,article,https://billpetti.github.io/baseballr/
+Introduction to Sparse Matrices in R - Python and R Tips,visualisation,article,https://cmdlinetips.com/2019/05/introduction-to-sparse-matrices-in-r/
+ecodata • A data package for reporting on Northeast Continental Shelf ecosystem status and trends.,visualisation,package,https://github.com/NOAA-EDAB/ecodata
+A genetic mapping animation in R | On unicorns and genes,publishing,article,https://onunicornsandgenes.blog/2021/04/11/a-genetic-mapping-animation-in-r/
+We’ve been doing k-means wrong for more than half a century,spatial,article,https://logarithmic.net/pfh-files/blog/01618034037/k-means-better.html
+A Future for R: A Comprehensive Overview • future,r-programming,article,https://future.futureverse.org/articles/future-1-overview.html
+"prettyunits • Pretty, human readable formatting of quantities",visualisation,package,https://github.com/r-lib/prettyunits
+A Detailed Guide to Plotting Line Graphs in R using ggplot geom_line,visualisation,article,https://michaeltoth.me/a-detailed-guide-to-plotting-line-graphs-in-r-using-ggplot-geom_line.html
+A Package for Creating Different Types of Bibliometric Networks • biblionetwork,visualisation,article,https://agoutsmedt.github.io/biblionetwork/
+Various Tools and Data for Quantitative Peace Science • peacesciencer,publishing,article,http://svmiller.com/peacesciencer/index.html
+idbr • An R interface to the US Census Bureau International Data Base API,visualisation,package,https://github.com/walkerke/idbr
+Building a blockchain in R,spatial,article,http://users.dimi.uniud.it/~massimo.franceschet/HEX0x6C/blockchain/blockchainR.html
+slickR • slick carousel htmlwidget for R,visualisation,package,https://github.com/yonicd/slickR
+Violation of Proportional Odds is Not Fatal | Statistical Thinking,statistics,article,https://www.fharrell.com/post/po/
+An Introduction to the webshot Package • webshot,publishing,article,http://wch.github.io/webshot/articles/intro.html
+Live Free or Dichotomize - NYTimes Map How-to,visualisation,article,https://livefreeordichotomize.com/2021/04/07/nytimes-map-how-to/
+From distributions to linear models,statistics,article,https://ourcodingclub.github.io/tutorials/modelling/
+Machine Learning 101,visualisation,article,https://sarahromanes.github.io/r-ladies-ML-1/
 gtfs2gps • Convert GTFS data into a data.table with GPS-like records in R,visualisation,package,https://github.com/ipeaGIT/gtfs2gps
 "Introducción R, manipulación y visualización en R",visualisation,article,http://www.castrolab.org/isme/introR/introR.html
 Searching for Spring: how to get data from the iNaturalist API in R | Eleanor,visualisation,article,https://www.eleanor-jackson.com/post/searching-for-spring/
